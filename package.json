@@ -1,0 +1,35 @@
+{
+  "name": "self-driving-car-javascript",
+  "version": "1.0.0",
+  "description": "Run a self-driving car using JavaScript and TensorFlow.js",
+  "main": "drive.js",
+  "scripts": {
+    "start": "node drive.js",
+    "training": "node train.js"
+  },
+  "keywords": [
+    "self-driving car",
+    "tensorflow",
+    "CNN"
+  ],
+  "author": "Alex Bakoushin <alex@bakoush.in>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bakoushin/self-driving-car-javascript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bakoushin/self-driving-car-javascript/issues"
+  },
+  "homepage": "https://github.com/bakoushin/self-driving-car-javascript#readme",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "1.7.4",
+    "csv-parser": "2.3.2",
+    "file-lines-count": "1.0.1",
+    "minimist": "1.2.5",
+    "socket.io": "2.3.0"
+  },
+  "engines": {
+    "node": ">= 12.0.0"
+  }
+}
