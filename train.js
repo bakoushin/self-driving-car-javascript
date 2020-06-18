@@ -15,10 +15,9 @@ const pathToCSV = path.join(dataDir, 'driving_log.csv');
 
 async function* dataGenerator() {
   while (true) {
-    const csvStream = fs
-      .createReadStream(pathToCSV)
-      .pipe(
-        csv([
+    const csvStream = fs.createReadStream(pathToCSV).pipe(
+      csv({
+        headers: [
           'center',
           'left',
           'right',
@@ -26,8 +25,10 @@ async function* dataGenerator() {
           'throttle',
           'brake',
           'speed'
-        ])
-      );
+        ],
+        mapValues: ({ value }) => value.trim()
+      })
+    );
 
     for await (const { center, left, right, steering } of csvStream) {
       const centerImageBuffer = fs.promises.readFile(center);
