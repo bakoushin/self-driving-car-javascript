@@ -31,9 +31,15 @@ async function* dataGenerator() {
     );
 
     for await (const { center, left, right, steering } of csvStream) {
-      const centerImageBuffer = fs.promises.readFile(center);
-      const leftImageBuffer = fs.promises.readFile(left);
-      const rightImageBuffer = fs.promises.readFile(right);
+      const centerImageBuffer = fs.promises.readFile(
+        path.join(dataDir, 'IMG', path.basename(center))
+      );
+      const leftImageBuffer = fs.promises.readFile(
+        path.join(dataDir, 'IMG', path.basename(left))
+      );
+      const rightImageBuffer = fs.promises.readFile(
+        path.join(dataDir, 'IMG', path.basename(right))
+      );
 
       const offset = 0.333;
 
