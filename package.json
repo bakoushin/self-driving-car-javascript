@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/bakoushin/self-driving-car-javascript#readme",
   "dependencies": {
-    "@tensorflow/tfjs-node": "2.0.1",
+    "@tensorflow/tfjs-node": "2.4.0",
     "csv-parser": "2.3.3",
     "file-lines-count": "1.0.1",
     "minimist": "1.2.5",
