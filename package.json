@@ -26,7 +26,7 @@
     "@tensorflow/tfjs-node": "2.4.0",
     "csv-parser": "2.3.3",
     "file-lines-count": "1.0.1",
-    "minimist": "1.2.5",
+    "minimist": "1.2.6",
     "socket.io": "2.3.0"
   },
   "engines": {
