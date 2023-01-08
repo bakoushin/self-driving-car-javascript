@@ -4,6 +4,10 @@ This project demonstrates how to train a self-driving car to steer and to drive 
 
 [<img src="https://img.youtube.com/vi/7fvKAR1TosA/maxresdefault.jpg" width="50%">](https://youtu.be/7fvKAR1TosA)
 
+Featured on [TensorFlow](https://www.youtube.com/@TensorFlow) YouTube channel:
+
+[<img src="https://img.youtube.com/vi/5C29fhFL_wQ/maxresdefault.jpg" width="50%">](https://youtu.be/5C29fhFL_wQ)
+
 See also detalied explanation of this project in a Medium publication: [Run a self-driving car using JavaScript and TensorFlow.js](https://medium.com/p/run-a-self-driving-car-using-javascript-and-tensorflow-js-8b9b3f7af23d?sk=549ee7230aa2b05fead0e68210982cf8).
 
 ## Usage
